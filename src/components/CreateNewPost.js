@@ -12,7 +12,7 @@ const CreateNewPost = (props) => {
                 autoFocus = {true}
                 type="text"
                 placeholder="post title"
-                onChange={props.savePostTitletoState}
+                onChange={props.savePostTitleToState}
                 required
                 ref={props.getTitle} />
             </label>
