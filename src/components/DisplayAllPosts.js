@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import './styles.css';
 import CreateNewPost from "./CreateNewPost";
 import ModifyPost from "./ModifyPost";
+import SinglePost from "./SinglePost";
 import Post from "./Post";
 
 const DisplayAllPosts = () => {
@@ -25,6 +26,7 @@ const DisplayAllPosts = () => {
   // const [allPosts, setAllPosts] = useState([]) // can also be used
   const [isCreateNewPost, setIsCreateNewPost] = useState(false);
   const [isModifyPost, setIsModifyPost] = useState(false);
+  const [isSinglePost, setIsSinglePost] = useState(false);
   const [editPostId, setEditPostId] = useState("");
 
   // Initialize useRef (to empty title and content once saved)
@@ -66,6 +68,19 @@ const DisplayAllPosts = () => {
     setEditPostId(id);
     toggleModifyPostComponent();
   };
+
+    // function 5 (toggle post editing)
+    const toggleSinglePostComponent = () => {
+      setIsSinglePost(!isSinglePost);
+    };
+  
+    // function 6 (to edit posts)
+    const showPost = (id) => {
+      setEditPostId(id);
+      toggleSinglePostComponent();
+    };
+
+
 
   // function 7 (to update the posts)
   const updatePost = (event) => {
@@ -132,11 +147,34 @@ const DisplayAllPosts = () => {
         </button>
       </>
     );
+  } else if (isSinglePost) {
+    const post = allPosts.find((post) => {
+      return post.id === editPostId;
+    });
+
+  return (
+    <>
+    <SinglePost
+      id={post.id}
+      title={post.title}
+      content={post.content}
+    />
+    <button className="btn btn-info back-button" onClick={toggleSinglePostComponent} >
+      Back
+    </button>
+    </>
+  );
   }
 
   return (
     <>
-      <h2>All Posts</h2>
+      <h2>Diplomatic MOM Blogspot</h2>
+      <button
+        className="btn btn-outline-info button-edits create-post"
+        onClick={toggleCreateNewPost}
+      >
+        Create New
+      </button>
       {!allPosts.length ? (
         <div>
           <li>There are no posts yet.</li>
@@ -150,15 +188,10 @@ const DisplayAllPosts = () => {
             content={eachPost.content}
             editPost={editPost}
             deletePost={deletePost}
+            showPost={showPost}
           />
         ))
       )}
-      <button
-        className="btn btn-outline-info button-edits create-post"
-        onClick={toggleCreateNewPost}
-      >
-        Create New
-      </button>
     </>
   );
 };

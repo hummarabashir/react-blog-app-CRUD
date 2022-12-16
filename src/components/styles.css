@@ -10,6 +10,10 @@
   h2 {
     text-align: center;
     color: purple;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   
   h3 {
@@ -34,35 +38,65 @@
     padding: 20px;
     margin: 40px;
   }
+
+  .post-header {
+    display: flex;
+  }
+
+   .postdiv {
+    flex: 1;
+  }
+
+  .post-header .divflex {
+    flex-grow: 9;
+  }
+  .post-header .divflex2 {
+    flex-grow: 2;
+  }
   
   .create-post {
     margin-top: 0;
+    margin-bottom: 0;
   }
   
   .edit-button {
     position: absolute;
     top: 20px;
-    right: 55px;
+    right: 80px;
     color: cyan;
   }
   
   .delete-button {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 50px;
+    color: cyan;
+  }
+
+  .show-button {
+    position: absolute;
+    top: 20px;
+    right: 12px;
     color: cyan;
   }
   
   .cancel-button {
     position: absolute;
-    top: 545px;
-    left: 90px;
+    top: 585px;
+    left: 100px;
   }
   
   .cancel-update-button {
     position: absolute;
-    top: 545px;
+    top: 585px;
     left: 160px;
+  }
+
+  .back-button {
+    /* position: absolute; */
+    /* top: 545px; */
+    /* left: 160px; */
+    margin: 0px 40px;
   }
   
   .button-css:active {
