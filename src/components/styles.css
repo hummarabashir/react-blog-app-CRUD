@@ -1,108 +1,145 @@
 .App {
-    font-family: sans-serif;
-    /* text-align: center; */
-  }
-  
-  body {
-    padding-top: 4px;
-  }
-  
-  h2 {
-    text-align: center;
-    color: purple;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  
-  h3 {
-    color: white;
-  }
-  
-  li {
-    color: grey;
-    margin: 12px;
-  }
-  
-  hr.new1 {
-    border-top: 1px dashed grey;
-  }
-  
-  .button-edits {
-    margin: 40px;
-  }
-  
-  .card-width {
-    color: white;
-    padding: 20px;
-    margin: 40px;
-  }
+  font-family: sans-serif;
+  /* text-align: center; */
+}
 
-  .post-header {
-    display: flex;
-  }
+body {
+  /* padding-top: 4px; */
+  font-family: sans-serif;
+  width: 100%;
+  /* height: 100vh; */
+  margin: 0;
+  /* padding: 16px; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      62deg,
+      rgba(1, 95, 183, 0.9732216701) 13%,
+      rgba(255, 122, 151, 0.5) 4%
+    ),
+    linear-gradient(
+      44deg,
+      rgba(0, 43, 99, 0.0792209024) 39%,
+      rgba(242, 140, 143, 0.5) 18%
+    ),
+    linear-gradient(
+      118deg,
+      rgba(84, 202, 242, 0.0315299727) 40%,
+      rgba(247, 155, 187, 0.5) 54%
+    ),
+    linear-gradient(
+      58deg,
+      rgba(90, 90, 237, 0.1614444357) 83%,
+      rgba(249, 156, 142, 0.5) 23%
+    );
+  background-blend-mode: normal, lighten, multiply, hard-light;
+  font-family: "DM Sans", sans-serif;
+  /* overflow: hidden; */
+  background-blend-mode: color-dodge;
+}
 
-   .postdiv {
-    flex: 1;
-  }
+h2 {
+  text-align: center;
+  color: purple;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
-  .post-header .divflex {
-    flex-grow: 9;
-  }
-  .post-header .divflex2 {
-    flex-grow: 2;
-  }
-  
-  .create-post {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  .edit-button {
-    position: absolute;
-    top: 20px;
-    right: 80px;
-    color: cyan;
-  }
-  
-  .delete-button {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    color: cyan;
-  }
+h3 {
+  color: white;
+}
+h3.nopost {
+  color: #10101d;
+  margin: 40px;
+}
 
-  .show-button {
-    position: absolute;
-    top: 20px;
-    right: 12px;
-    color: cyan;
-  }
-  
-  .cancel-button {
-    position: absolute;
-    top: 585px;
-    left: 100px;
-  }
-  
-  .cancel-update-button {
-    position: absolute;
-    top: 585px;
-    left: 160px;
-  }
+li {
+  color: grey;
+  margin: 12px;
+}
 
-  .back-button {
-    /* position: absolute; */
-    /* top: 545px; */
-    /* left: 160px; */
-    margin: 0px 40px;
-  }
-  
-  .button-css:active {
-    transform: translateY(3px);
-  }
-  
-  .button-css:focus {
-    outline: 0;
-  }
+hr.new1 {
+  border-top: 1px dashed grey;
+}
+
+.button-edits {
+  margin: 40px;
+}
+
+.card-width {
+  background-color: #10101d;
+  color: white;
+  padding: 20px;
+  margin: 40px;
+}
+
+.post-header {
+  display: flex;
+}
+
+.postdiv {
+  flex: 1;
+}
+
+.post-header .divflex {
+  flex-grow: 9;
+}
+.post-header .divflex2 {
+  flex-grow: 2;
+}
+
+.create-post {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.edit-button {
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  color: cyan;
+}
+
+.delete-button {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: cyan;
+}
+
+.show-button {
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  color: cyan;
+}
+
+.cancel-button {
+  position: absolute;
+  top: 597px;
+  left: 100px;
+}
+
+.cancel-update-button {
+  position: absolute;
+  top: 597px;
+  left: 160px;
+}
+
+.back-button {
+  /* position: absolute; */
+  /* top: 545px; */
+  /* left: 160px; */
+  margin: 0px 40px;
+}
+
+.button-css:active {
+  transform: translateY(3px);
+}
+
+.button-css:focus {
+  outline: 0;
+}
