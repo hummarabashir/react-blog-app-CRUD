@@ -4,7 +4,7 @@
 
 <h1>Application Preview</h1>
 
-<img src= "React Blogspot.gif" width="100%" />
+<img src= "nlog-app.gif" width="100%" />
 
 <h1>Setting up the Application</h1>
 
