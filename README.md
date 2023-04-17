@@ -1,10 +1,10 @@
-# React Blog App - CRUD
+<h1 align="center">React Blog App - CRUD</h1>
 
 <p>React Frontend + Boostrap :)</p>
 
 <h1>Application Preview</h1>
 
-<img src= "nlog-app.gif" width="100%" />
+<img src= "blog-app.gif" width="100%" />
 
 <h1>Setting up the Application</h1>
 
