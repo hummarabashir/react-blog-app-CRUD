@@ -5,6 +5,7 @@
 <h1>Application Preview</h1>
 
 <img src= "blog-app.gif" width="100%" />
+<a href="https://hummarabashir.github.io/react-blog-app-CRUD/">Live Demo</a>
 
 <h1>Setting up the Application</h1>
 
